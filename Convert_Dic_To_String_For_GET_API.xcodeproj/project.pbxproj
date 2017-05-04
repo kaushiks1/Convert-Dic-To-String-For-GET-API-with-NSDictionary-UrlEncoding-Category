@@ -16,6 +16,7 @@
 		4410434B1D4C8EB000D2343F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441043491D4C8EB000D2343F /* LaunchScreen.storyboard */; };
 		441043561D4C8EB000D2343F /* Convert_Dic_To_String_For_GET_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441043551D4C8EB000D2343F /* Convert_Dic_To_String_For_GET_APITests.m */; };
 		441043611D4C8EB000D2343F /* Convert_Dic_To_String_For_GET_APIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441043601D4C8EB000D2343F /* Convert_Dic_To_String_For_GET_APIUITests.m */; };
+		441043731D4C923300D2343F /* NSDictionary+UrlEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 441043721D4C923300D2343F /* NSDictionary+UrlEncoding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4410435C1D4C8EB000D2343F /* Convert_Dic_To_String_For_GET_APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Convert_Dic_To_String_For_GET_APIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		441043601D4C8EB000D2343F /* Convert_Dic_To_String_For_GET_APIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Convert_Dic_To_String_For_GET_APIUITests.m; sourceTree = "<group>"; };
 		441043621D4C8EB000D2343F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441043711D4C923300D2343F /* NSDictionary+UrlEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+UrlEncoding.h"; sourceTree = "<group>"; };
+		441043721D4C923300D2343F /* NSDictionary+UrlEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+UrlEncoding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 				4410433C1D4C8EB000D2343F /* AppDelegate.m */,
 				4410433E1D4C8EB000D2343F /* ViewController.h */,
 				4410433F1D4C8EB000D2343F /* ViewController.m */,
+				441043741D4C95D900D2343F /* Category */,
 				441043411D4C8EB000D2343F /* Main.storyboard */,
 				441043471D4C8EB000D2343F /* Assets.xcassets */,
 				441043491D4C8EB000D2343F /* LaunchScreen.storyboard */,
@@ -141,6 +145,15 @@
 				441043621D4C8EB000D2343F /* Info.plist */,
 			);
 			path = Convert_Dic_To_String_For_GET_APIUITests;
+			sourceTree = "<group>";
+		};
+		441043741D4C95D900D2343F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				441043711D4C923300D2343F /* NSDictionary+UrlEncoding.h */,
+				441043721D4C923300D2343F /* NSDictionary+UrlEncoding.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +290,7 @@
 				441043401D4C8EB000D2343F /* ViewController.m in Sources */,
 				4410433D1D4C8EB000D2343F /* AppDelegate.m in Sources */,
 				4410433A1D4C8EB000D2343F /* main.m in Sources */,
+				441043731D4C923300D2343F /* NSDictionary+UrlEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +516,7 @@
 				441043671D4C8EB000D2343F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		441043681D4C8EB000D2343F /* Build configuration list for PBXNativeTarget "Convert_Dic_To_String_For_GET_APITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +525,7 @@
 				4410436A1D4C8EB000D2343F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4410436B1D4C8EB000D2343F /* Build configuration list for PBXNativeTarget "Convert_Dic_To_String_For_GET_APIUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +534,7 @@
 				4410436D1D4C8EB000D2343F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

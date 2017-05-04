@@ -16,6 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
+//    http://shagunn.info/cherishws/webservices/userRegistration?key=28c15c0b405c1f7a107133edf5504367&name=Rohan%20Kadam&mobile_no=8451821411&email_id=rohank989@gmail.com&password=1234&mode=R
+    
+    
+    NSDictionary *dictionaryNew = @{@"key": @"28c15c0b405c1f7a107133edf5504367",
+                                    @"name": @"Rohan Kadam",
+                                    @"mobile_no": @"8451821411",
+                                    @"email_id": @"rohank989@gmail.com",
+                                    @"password": @"1234",
+                                    @"mode": @"R",};
+    
+    NSLog(@"%@",dictionaryNew);
+    NSLog(@"%@",[dictionaryNew urlEncodedString]);
+    
+    
+    NSString *stringURLForGetResponce = [NSString stringWithFormat:@"%@%@",@"http://shagunn.info/cherishws/webservices/userRegistration?",[dictionaryNew urlEncodedString]];
+    NSLog(@"%@",stringURLForGetResponce);
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
